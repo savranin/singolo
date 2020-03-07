@@ -37,7 +37,7 @@ body{
 }
 
 .form-inputs {
-    padding-top: 27px;
+    padding-top:11px;
 }
 .inputs{
     width: 619px; 
@@ -45,32 +45,35 @@ body{
     border-radius: 5px;
     background: #d6564f;
     border: none; 
-}
-
-#input-email,
-#input-subject,
-#input-describe
-{
     margin-top: 16px;
 }
 
 #input-describe {
-    width: 619px; 
-    height: 200px;
+    width: 616px; 
+    height: 198px;
     border-radius: 5px;
     background: #d6564f;
     border: none; 
 }
 
-::-webkit-input-placeholder { /* Chrome */
+#input-describe::placeholder {
+    font-family: 'Lato';
+    font-size: 8pt;
+    font-weight: 400;
+    color: #f48c8f;
+    padding-left: 12px;
+    padding-top: 10px;
+  }
+
+
+.inputs::placeholder {
+    font-family: 'Lato';
+    font-size: 8pt;
+    font-weight: 400;
     color: #f48c8f;
     padding-left: 14px;
-    font-size: 8pt;    
-    padding-bottom: 180px;
-    /*
-    transform: translateY(-10px); поднять текст placeholder выше
-    */   
   }
+
 
 .contacts h3{
     margin-top: 24px;
@@ -83,3 +86,101 @@ body{
     letter-spacing: -0.01rem;
     line-height: 21px;
 }
+
+.pink-line3 {
+    height: 6px;
+    width: 1020px;
+    background-color: #ea676b;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer3 {
+    height: 76px;
+    width: 1020px;
+    background-color: #2d303a;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    color: #666d89;
+    font-size: 9pt;
+    margin-top: 30px;
+    margin-left: 2px;
+}
+
+.navbar3 {
+    margin-top: 22px;
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.about-icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.true_contact {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+  }
+
+.true_contacts {
+    padding-top: 8px;
+  }
+  
+.contact__link {
+    font-size: 12px;
+    font-weight: 400;
+    width: 300px;
+    margin-left: 8px;
+    text-decoration: none;
+    color: #f0d8d9;
+  }
+
+
+.contact__link1 {
+    font-size: 12px;
+    font-weight: 400;
+    width: 300px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #f0d8d9;
+  }
+
+.true_contact1 {
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+.true_contact2 {
+    padding-top: 3px;
+}
+
+.true_contact2 img{
+    padding-left: 1px;
+    padding-top: 1px;
+}
+
+.true_contact3 {
+    padding-top: 3px;
+}
+
+.submit{
+    width: 619px; 
+    height: 36px;
+    border-radius: 5px;
+    border: none; 
+    margin-top: 16px;
+}
+
+
+
