@@ -43,7 +43,6 @@ body{
 
 .logo { 
     padding-top: 10px;
-    /*margin-left: 40px;*/
     color: white;
     font-size: 10pt;
     letter-spacing: -0.1rem;
@@ -64,7 +63,6 @@ body{
     background-color: #f06c64;
     display: flex;
     box-sizing: border-box;
-    /*   padding: 0 40px;*/
     margin: 0 auto;
 }
 
@@ -82,7 +80,6 @@ body{
     width: 1020px;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    /*padding: 0 40px;*/
     margin: 0 auto;
 }
 
@@ -202,7 +199,6 @@ body{
     width: 1020px;
     color: #767e9e;
     box-sizing: border-box;
-    /*padding: 0 40px;*/
     margin: 0 auto;
 }
 
