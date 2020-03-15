@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
     <div class="wrapper1">
         <header class="header1">
             <a class="logo" href="#" style="text-decoration: none;">
@@ -16,39 +17,44 @@
                     <span style="color: red;">*</span>
                 </h1>
             </a>
-            <nav class="navbar">
+            <nav class="navbar" id="menu">
                 <ul>
                     <li class="navbar-item" style="list-style-type: none;">
                         <a style="color: rgba(240, 108, 100, 255);" href="#">HOME</a>
                     </li>
-                    <li class="navbar-item">
-                        <a href="#">SERVICES</a>
+                    <li class="active navbar-item">
+                        <a href="#anchor-services">SERVICES</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#">PORTFOLIO</a>
+                        <a href="#anchor-portfolio">PORTFOLIO</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#">ABOUT</a>
+                        <a href="#anchor-about">ABOUT</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#">CONTACT</a>
+                        <a href="#anchor-contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
         </header>
     </div>
+  
     <div class="thin-line"></div>
     <div class="slider">
-        <img class="img_arrow_left"     src="assets/chev_left_red.png" alt = "arrow left">
-        <img class="img1"               src="assets/iPhone_Vertical.png" alt = "vertical iphone">
-        <img class="img2"               src="assets/iPhone_Horizontal.png" alt = "horizontal iphone">
-        <img class="img_arrow_right"    src="assets/chev_right_red.png" alt = "arrow right">
+        <div class="item">
+            <img src="assets/slide1.png" alt="Первый слайд">
+        </div>    
+        <div class="item">
+            <img src="assets/slide2.png" alt="Второй слайд">
+        </div>       
+        <img class="img_arrow_left"   onclick="minusSlide()"  src="assets/chev_left_red.png" alt = "arrow left">
+        <img class="img_arrow_right"  onclick="plusSlide()"  src="assets/chev_right_red.png" alt = "arrow right">   
     </div>
 
     <div class="line-under-slider"></div>
 
     <div class="footer1">
-        <h2 class="text-footer-h">
+        <h2 class="text-footer-h" id="anchor-services"> 
             Our Services
         </h2>
         <p class="text-footer-p">
@@ -123,69 +129,70 @@
     <div class="line-under-footer"></div>
     <div class="wrapper2">
         <header class="header2">
-            <h2 class="logo2-text">Portfolio</h2>
+            <h2 class="logo2-text" id="anchor-portfolio">Portfolio</h2>
             <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <nav class="navbar2">
+            <nav class="navbar2" id ="menu2">
                 <ul>
-                    <li class="navbar2-item1">
-                        <a href="#" id = "navbar2-item-all">All</a>
+                    <li class="active navbar2-item1">
+                        <a onclick="changePictures()" id = "navbar2-item-all">All</a>
                     </li>
                     <li class="navbar2-item2">
-                        <a href="#">Web Design</a>
+                        <a onclick="changePictures()">Web Design</a>
                     </li>
                     <li class="navbar2-item3">
-                        <a href="#">Graphic Design</a>
+                        <a onclick="changePictures()">Graphic Design</a>
                     </li>
                     <li class="navbar2-item4">
-                        <a href="#">Artwork</a>
+                        <a onclick="changePictures()">Artwork</a>
                     </li>
                 </ul>
             </nav>
 
             <div id="grid-header">
                 <div>
-                    <img src="assets/portfolio1.png" alt = "pic 1">                    
+                    <img class ="pic-portfolio" src="assets/portfolio1.png" alt = "pic 1">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio2.png" alt = "pic 2">                    
+                    <img class ="pic-portfolio" src="assets/portfolio2.png" alt = "pic 2">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio3.png" alt = "pic 3">                    
+                    <img class ="pic-portfolio" src="assets/portfolio3.png" alt = "pic 3">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio4.png" alt = "pic 4">                    
+                    <img class ="pic-portfolio" src="assets/portfolio4.png" alt = "pic 4">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio5.png" alt = "pic 5">                    
+                    <img class ="pic-portfolio" src="assets/portfolio5.png" alt = "pic 5">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio6.png" alt = "pic 6">                    
+                    <img class ="pic-portfolio" src="assets/portfolio6.png" alt = "pic 6">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio7.png" alt = "pic 7">                    
+                    <img class ="pic-portfolio" src="assets/portfolio7.png" alt = "pic 7">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio8.png" alt = "pic 8">                    
+                    <img class ="pic-portfolio" src="assets/portfolio8.png" alt = "pic 8">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio9.png" alt = "pic 9">                    
+                    <img class ="pic-portfolio" src="assets/portfolio9.png" alt = "pic 9">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio10.png" alt = "pic 10">                    
+                    <img class ="pic-portfolio" src="assets/portfolio10.png" alt = "pic 10">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio11.png" alt = "pic 11">                    
+                    <img class ="pic-portfolio" src="assets/portfolio11.png" alt = "pic 11">                    
                 </div>
                 <div>
-                    <img src="assets/portfolio12.png" alt = "pic 12">                    
+                    <img class ="pic-portfolio" src="assets/portfolio12.png" alt = "pic 12">                    
                 </div>
             </div>
         </header>
     </div>
     <div class="thin-line"></div>
 
+    
     <div class="footer2">
-        <h2 class="text-footer-h">
+        <h2 class="text-footer-h" id="anchor-about">
             About Us
         </h2>
         <p class="text-footer-p">
@@ -239,16 +246,19 @@
 
     <div class = "wrapper3">
         <header class="header3">
-            <h2 class="Get-text">Get a Quote</h2>
+            <h2 class="Get-text" id="anchor-contact">Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div id="information">
           
                     <form class ="form-inputs" action="#" method="post">
-                        <input  class = "inputs" name = "Name"     placeholder="Name (Required)" pattern ="^[ A-Za-z]{3,}" required>
+                        <!--<input  class = "inputs" name = "Name"     placeholder="Name (Required)" pattern ="^[ A-Za-z]{3,}" required>
                         <input  class = "inputs" name = "Password" placeholder="Email (Required)" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                        <input  class = "inputs" name = "Subject"  placeholder="Subject">                        
+                        -->
+                        <input  class = "inputs" name = "Name"     placeholder="Name (Required)">
+                        <input  class = "inputs" name = "Password" placeholder="Email (Required)">
+                        <input  class = "inputs" name = "Subject"  placeholder="Subject"  id = "subject">                        
                         <textarea id = "input-describe" class = "inputs" name="description" placeholder="Describe your project in detail..."></textarea>                  
-                        <button type="submit" class="submit" name="submit" id="submit">Submit</button>
+                        <button type="button" class="submit" name="submit" id="submit">Submit</button>
                     </form>    
 
                 <div class="contacts">
@@ -274,8 +284,14 @@
                     
                 </div>
             </div> 
-        </header>  
-   
+        </header>    
+    </div>
+    <div id = "message-block" class = "hidden">
+        <div id = "message">
+            <p><span id="result"></span></p>
+            <br>
+            <button id = "close-submit">OK</button>
+        </div>
     </div>
     <div class = "pink-line3"></div> 
     <footer class = "footer3">
@@ -289,6 +305,7 @@
     </footer> 
 
 
+    <script src ="script.js"></script>
 
 </body>
 </html>
