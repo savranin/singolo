@@ -4,6 +4,7 @@ body{
     padding:0;
 }
 
+
 .header1 {
     height: 89px;
     background:#2d303a;
@@ -13,6 +14,7 @@ body{
     padding: 0 40px;
     margin: 0 auto;
     box-sizing: border-box;
+
 }
 
 .navbar ul {
@@ -41,8 +43,9 @@ body{
 }  
 
 .navbar a.active {
-    color: yellow;
+    color: red;
 }
+
 
 .logo { 
     padding-top: 10px;
@@ -149,8 +152,9 @@ body{
  }
 
 .item2 {
-   width: 100%;
+    width: 100%;
     background-color: #648BF0;
+    height: 600px;
 }
 
 .item1_1 {
@@ -194,7 +198,6 @@ body{
 
 #slide2_1_black {
     padding-left: -302px;
-    margin-top: -314px;
     opacity: 0.6;
 }
 
@@ -203,10 +206,9 @@ body{
     margin-top: -513px;
 }
 
-#slide2_3_black {
+#slide2_3_2 {
     padding-left: -302px;
-    margin-top: -314px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 #slide2_3 {
@@ -217,7 +219,7 @@ body{
     display: none;
 }
 
-#slide2_1_black, #slide2_shadow, #slide2_2_black, #slide2_1shadow, #slide2_3_black, #slide2_3shadow{
+#slide2_1_black, #slide2_shadow, #slide2_2_black, #slide2_1shadow, #slide2_3_2{
     display: none;
 }
 
@@ -275,7 +277,6 @@ body{
 }
 
 .header2 h2 {
-    /*padding-left: 40px;*/
     font-size: 22pt;
     font-weight: 900;
     padding-top: 59px;
@@ -322,8 +323,8 @@ body{
 }
 
 .navbar2 a.active {
-    color: yellow;
-    border: 1px solid yellow; 
+    color: white;
+    border: 1px solid white; 
 }
 
 #navbar2-item-all {
@@ -340,10 +341,11 @@ body{
     border: 1px solid #767e9e;  
 }
 
+/*
 .active#navbar2-item-all {
-    color: yellow;
-    border: 1px solid yellow;  
-}
+    color: white;
+    border: 1px solid white;  
+}*/
 
 .navbar2-item2 {
     width: 78px;
@@ -717,4 +719,14 @@ body{
     top: 50%;
     left: 50%;
     text-align: left;
+    color: white;
 }
+
+#wrong_name {
+    display: none;
+}
+
+#wrong_email {
+    display: none;
+}
+

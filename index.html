@@ -18,11 +18,11 @@
                 </h1>
             </a>
             <nav class="navbar" id="menu">
-                <ul>
+                <ul class = "nav-header">
                     <li class="navbar-item" style="list-style-type: none;">
-                        <a style="color: rgba(240, 108, 100, 255);" href="#">HOME</a>
+                        <a class="active" href="#">HOME</a>
                     </li>
-                    <li class="active navbar-item">
+                    <li class="navbar-item"> 
                         <a href="#anchor-services">SERVICES</a>
                     </li>
                     <li class="navbar-item">
@@ -43,30 +43,28 @@
     <div class="slider">
         <div class="item item1">
             <div class="item1_1">
-                <img id="phone-vertical_1" src="assets/phone-vertical_1.png" onclick="phone_vertical_1Click()" alt="Вертикальный включенный iphone">
-                <img id="phone-vertical_2" src="assets/phone-vertical_2.png" onclick="phone_vertical_2Click()" alt="Вертикальный выключенный iphone">
+                 <img id="phone-vertical_1" src="assets/phone/phone-vertical_1.png" onclick="phone_vertical_1Click()" alt="Вертикальный включенный iphone">
+                <img id="phone-vertical_2" src="assets/phone/phone-vertical_2.png" onclick="phone_vertical_2Click()" alt="Вертикальный выключенный iphone">
             </div>
             <div class="item1_2">
-                <img id="phone-horizontal_1" src="assets/phone-horizontal_1.png" onclick="phone_horizontal_1Click()" alt="Горизонтальный включенный iphone">
-                <img id="phone-horizontal_2" src="assets/phone-horizontal_2.png" onclick="phone_horizontal_2Click()" alt="Горизонтальный выключенный iphone">
+                <img id="phone-horizontal_1" src="assets/phone/phone-horizontal_1.png" onclick="phone_horizontal_1Click()" alt="Горизонтальный включенный iphone">
+                <img id="phone-horizontal_2" src="assets/phone/phone-horizontal_2.png" onclick="phone_horizontal_2Click()" alt="Горизонтальный выключенный iphone">
             </div>
         </div> 
 
         <div class="item item2">
             <div class="item2_1">
-                <img id="slide2_shadow"  src="assets/phone-vertical-shadow.png" alt="Вертикальный включенный iphone">
-                <img id="slide2_1"       src="assets/slide2_1.png" onclick="phone_vertical_2_1Click()" alt="Вертикальный включенный iphone">
-                <img id="slide2_1_black" src="assets/slide2_1_black.png" onclick="phone_vertical_2_1_blackClick()" alt="Вертикальный включенный iphone">
+                <img id="slide2_1"       src="assets/phone/slide2_3_1.png" onclick="phone_vertical_2_1Click()" alt="Вертикальный включенный iphone">
+                <img id="slide2_1_black" src="assets/phone/slide2_3_2.png" onclick="phone_vertical_2_1_blackClick()" alt="Вертикальный включенный iphone">
             </div>
             <div class="item2_2">
-                <img id="slide2_1shadow"    src="assets/vertical_shadow_big.png" alt="Вертикальный включенный iphone">
-                <img id="slide2_2"          src="assets/slide2_2.png" onclick="phone_vertical_2_2Click()" alt="Горизонтальный включенный iphone">
-                <img id="slide2_2_black"    src="assets/slide2_2_black.png" onclick="phone_vertical_2_2_blackClick()" alt="Горизонтальный включенный iphone">
+                <img id="slide2_1shadow"    src="assets/phone/vertical_shadow_big.png" alt="Вертикальный включенный iphone">
+                <img id="slide2_2"          src="assets/phone/slide2_2.png" onclick="phone_vertical_2_2Click()" alt="Горизонтальный включенный iphone">
+                <img id="slide2_2_black"    src="assets/phone/slide2_2_black.png" onclick="phone_vertical_2_2_blackClick()" alt="Горизонтальный включенный iphone">
             </div>
             <div class="item2_3">
-                <img id="slide2_3shadow" src="assets/phone-vertical-shadow.png" alt="Вертикальный включенный iphone">
-                <img id="slide2_3"       src="assets/slide2_3.png"              onclick="phone_vertical_2_3Click()" alt="Горизонтальный включенный iphone">
-                <img id="slide2_3_black" src="assets/slide2_1_black.png"        onclick="phone_vertical_2_3_blackClick()" alt="Вертикальный включенный iphone">
+                <img id="slide2_3_1"        src="assets/phone/slide2_3_1.png"   onclick="slide2_3_1Click()" alt="Горизонтальный включенный iphone">
+                <img id="slide2_3_2"        src="assets/phone/slide2_3_2.png"   onclick="slide2_3_2Click()" alt="Вертикальный включенный iphone">
             </div>
         </div> 
         
@@ -80,7 +78,7 @@
 
     <div class="line-under-slider"></div>
 
-    <div class="footer1">
+    <div class="anchor footer1" data-anchor="nav-services">
         <h2 class="text-footer-h" id="anchor-services"> 
             Our Services
         </h2>
@@ -160,8 +158,8 @@
             <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <nav class="navbar2" id ="menu2">
                 <ul>
-                    <li class="active navbar2-item1">
-                        <a onclick="changePictures()" id = "navbar2-item-all">All</a>
+                    <li class="navbar2-item1">
+                        <a class="active" onclick="changePictures()">All</a>
                     </li>
                     <li class="navbar2-item2">
                         <a onclick="changePictures()">Web Design</a>
@@ -277,15 +275,14 @@
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div id="information">
           
-                    <form class ="form-inputs" action="#" method="post">
-                        <!--<input  class = "inputs" name = "Name"     placeholder="Name (Required)" pattern ="^[ A-Za-z]{3,}" required>
-                        <input  class = "inputs" name = "Password" placeholder="Email (Required)" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                        -->
-                        <input  class = "inputs" name = "Name"     placeholder="Name (Required)">
-                        <input  class = "inputs" name = "Password" placeholder="Email (Required)">
+                    <form class ="form-inputs" action="#" method="#">
+                        <input  type = "text" class = "inputs inputs-name" name = "Name"     placeholder="Name (Required)" required>
+                        <span id="wrong_name">Please enter your Name</span>
+                        <input  type = "email" class = "inputs inputs-email" name = "Password" placeholder="Email (Required)" required>
+                        <span id="wrong_email">Please enter your e-mail address.</span>
                         <input  class = "inputs" name = "Subject"  placeholder="Subject"  id = "subject">                        
                         <textarea id = "input-describe" class = "inputs" name="description" placeholder="Describe your project in detail..."></textarea>                  
-                        <button type="button" class="submit" name="submit" id="submit">Submit</button>
+                        <button type="submit" class="submit" name="submit" id="submit">Submit</button>
                     </form>    
 
                 <div class="contacts">
