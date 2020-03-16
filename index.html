@@ -41,14 +41,41 @@
   
     <div class="thin-line"></div>
     <div class="slider">
-        <div class="item">
-            <img src="assets/slide1.png" alt="Первый слайд">
-        </div>    
-        <div class="item">
-            <img src="assets/slide2.png" alt="Второй слайд">
-        </div>       
-        <img class="img_arrow_left"   onclick="minusSlide()"  src="assets/chev_left_red.png" alt = "arrow left">
-        <img class="img_arrow_right"  onclick="plusSlide()"  src="assets/chev_right_red.png" alt = "arrow right">   
+        <div class="item item1">
+            <div class="item1_1">
+                <img id="phone-vertical_1" src="assets/phone-vertical_1.png" onclick="phone_vertical_1Click()" alt="Вертикальный включенный iphone">
+                <img id="phone-vertical_2" src="assets/phone-vertical_2.png" onclick="phone_vertical_2Click()" alt="Вертикальный выключенный iphone">
+            </div>
+            <div class="item1_2">
+                <img id="phone-horizontal_1" src="assets/phone-horizontal_1.png" onclick="phone_horizontal_1Click()" alt="Горизонтальный включенный iphone">
+                <img id="phone-horizontal_2" src="assets/phone-horizontal_2.png" onclick="phone_horizontal_2Click()" alt="Горизонтальный выключенный iphone">
+            </div>
+        </div> 
+
+        <div class="item item2">
+            <div class="item2_1">
+                <img id="slide2_shadow"  src="assets/phone-vertical-shadow.png" alt="Вертикальный включенный iphone">
+                <img id="slide2_1"       src="assets/slide2_1.png" onclick="phone_vertical_2_1Click()" alt="Вертикальный включенный iphone">
+                <img id="slide2_1_black" src="assets/slide2_1_black.png" onclick="phone_vertical_2_1_blackClick()" alt="Вертикальный включенный iphone">
+            </div>
+            <div class="item2_2">
+                <img id="slide2_1shadow"    src="assets/vertical_shadow_big.png" alt="Вертикальный включенный iphone">
+                <img id="slide2_2"          src="assets/slide2_2.png" onclick="phone_vertical_2_2Click()" alt="Горизонтальный включенный iphone">
+                <img id="slide2_2_black"    src="assets/slide2_2_black.png" onclick="phone_vertical_2_2_blackClick()" alt="Горизонтальный включенный iphone">
+            </div>
+            <div class="item2_3">
+                <img id="slide2_3shadow" src="assets/phone-vertical-shadow.png" alt="Вертикальный включенный iphone">
+                <img id="slide2_3"       src="assets/slide2_3.png"              onclick="phone_vertical_2_3Click()" alt="Горизонтальный включенный iphone">
+                <img id="slide2_3_black" src="assets/slide2_1_black.png"        onclick="phone_vertical_2_3_blackClick()" alt="Вертикальный включенный iphone">
+            </div>
+        </div> 
+        
+        
+        <img class="img_arrow_left"   onclick="minusSlide()"  src="assets/chev_left_red.png" alt = "arrow left"> 
+   
+        <img class="img_arrow_right"  onclick="plusSlide()"  src="assets/chev_right_red.png" alt = "arrow right"> 
+
+      
     </div>
 
     <div class="line-under-slider"></div>

@@ -78,7 +78,7 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
 
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "flex";
 }
 
 let picIndex = 0;
@@ -98,5 +98,64 @@ function changePictures() {
         slides[i-1].src="assets/portfolio" +  num + ".png";
     }
 }
+
+function phone_vertical_1Click() {
+    document.getElementById("phone-vertical_1").style.display = "none";
+    document.getElementById("phone-vertical_2").style.display = "block";
+}
+
+function phone_vertical_2Click() {
+    document.getElementById("phone-vertical_1").style.display = "block";
+    document.getElementById("phone-vertical_2").style.display = "none";
+}
+
+function phone_horizontal_1Click() {
+    document.getElementById("phone-horizontal_1").style.display = "none";
+    document.getElementById("phone-horizontal_2").style.display = "block";
+}
+
+function phone_horizontal_2Click() {
+    document.getElementById("phone-horizontal_1").style.display = "block";
+    document.getElementById("phone-horizontal_2").style.display = "none";
+}
+
+function phone_vertical_2_1Click() {
+    document.getElementById("slide2_1").style.display = "none";
+    document.getElementById("slide2_1_black").style.display = "block";
+    document.getElementById("slide2_shadow").style.display = "block";
+}
+
+function phone_vertical_2_1_blackClick() {
+    document.getElementById("slide2_1").style.display = "block";
+    document.getElementById("slide2_1_black").style.display = "none";
+    document.getElementById("slide2_shadow").style.display = "none";
+}
+
+function phone_vertical_2_2Click() {
+    document.getElementById("slide2_2").style.display = "none";
+    document.getElementById("slide2_2_black").style.display = "block";
+    document.getElementById("slide2_1shadow").style.display = "block";
+}
+
+function phone_vertical_2_2_blackClick() {
+    document.getElementById("slide2_2").style.display = "block";
+    document.getElementById("slide2_2_black").style.display = "none";
+    document.getElementById("slide2_1shadow").style.display = "none";
+}
+
+function phone_vertical_2_3Click() {
+    document.getElementById("slide2_3").style.display = "none";
+    document.getElementById("slide2_3_black").style.display = "block";
+    document.getElementById("slide2_3shadow").style.display = "block";
+}
+
+function phone_vertical_2_3_blackClick() {
+    document.getElementById("slide2_3").style.display = "block";
+    document.getElementById("slide2_3_black").style.display = "none";
+    document.getElementById("slide2_3shadow").style.display = "none";
+}
+
+
+
 
 
